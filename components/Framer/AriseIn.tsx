@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useId } from "react";
 
 type Props = {
     duration?: number;
@@ -7,8 +8,12 @@ type Props = {
 };
 
 const AriseIn: React.FC<Props> = ({ duration, delay, children }) => {
+    console.log("show");
+    const id = useId();
     return (
         <motion.div
+            key={id}
+            id={id}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
