@@ -105,6 +105,24 @@ const Render: NextPage = () => {
                             allowFullScreen
                         ></iframe>
                     </div>
+                ) : section === 3 ? (
+                    <div
+                        style={{
+                            background: "#1D1E20",
+                        }}
+                        className="absolute top-0 left-0 h-full w-full flex justify-center items-center"
+                    >
+                        <div
+                            style={{
+                                background: "url('/assets/projects.png')",
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
+                                backgroundRepeat: "no-repeat",
+                                width: 650,
+                                height: 450,
+                            }}
+                        ></div>
+                    </div>
                 ) : (
                     ""
                 )}
