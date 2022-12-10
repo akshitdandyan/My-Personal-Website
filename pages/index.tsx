@@ -116,9 +116,9 @@ const Render: NextPage = () => {
                         width={700}
                         onLoad={() => {
                             i++;
-                            if (i === 2) {
-                                setShowLoader(false);
-                            }
+                            // if (i === 2) {
+                            setShowLoader(false);
+                            // }
                         }}
                     />
 
