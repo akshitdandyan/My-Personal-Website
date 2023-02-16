@@ -20,7 +20,7 @@ const SectionOne: React.FC = () => {
                             {" "}
                             Chitkara University
                         </a>{" "}
-                        and I am in my 5th/8 semester. I&apos;m passionate about
+                        and I am in my 6th/8 semester. I&apos;m passionate about
                         building products that help people and make their lives
                         easier.
                     </p>
