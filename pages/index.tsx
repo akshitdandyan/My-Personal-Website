@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Spline from "@splinetool/react-spline";
-import { useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import SectionOne from "../components/info-sections/SectionOne";
 import Image from "next/image";
 import SectionTwo from "../components/info-sections/SectionTwo";
@@ -10,6 +10,12 @@ let i = 0;
 const Render: NextPage = () => {
     const [showLoader, setShowLoader] = useState(true);
     const [section, setSection] = useState(1);
+
+    useLayoutEffect(() => {
+        if (window.innerWidth <= 768) {
+            window.location.href = "https://blue-whale.notion.site";
+        }
+    }, []);
 
     return (
         <div>
